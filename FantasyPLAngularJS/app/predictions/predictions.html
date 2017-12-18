@@ -1,0 +1,24 @@
+<div ng-app="myApp">
+<div ng-controller="predictCtrl" ng-class="ng-scope">
+    <p>    Click <a ng-click="getPredictions()">here</a> to load data.</p>
+<table>
+    <tr>
+        <th>Player Id</th>
+        <th>Venue</th>
+        <th>Team Goals</th>
+        <th>Opposition Goals</th>
+        <th>Goals</th>
+        <th>Assists</th>
+        <th>Clean Sheets</th>
+        <th>Bonus</th>
+        <th>ICT Index</th>
+        <th>Team Rank</th>
+        <th>Opponent Team Rank</th>
+        <th>Total Points</th>
+    </tr>
+    <tr ng-repeat="key in players">
+        <td>{{key}}</td>
+    </tr>
+</table>
+</div>
+</div>
